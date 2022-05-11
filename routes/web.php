@@ -50,7 +50,7 @@ Route::get('/callback', function (Request $request) {   //Get Token after author
         $response = Http::asForm()->post('https://pa8-v3-app.herokuapp.com/oauth/token', [
             'grant_type' => 'authorization_code',
             'client_id' => '1',
-            'client_secret' => '0XVuI95B4R0HmrTbUGvRWOu0ZHCqAPk37UDZZExx',
+            'client_secret' => 'jMNiwtaRlJt6kVznMJss5G4uSojV2iuIinVKcDMN',
             'redirect_uri' => 'https://pa8-v3-app.herokuapp.com/callback',
             'code' => $request->code,
         ]);
